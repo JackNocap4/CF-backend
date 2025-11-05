@@ -15,7 +15,7 @@ export const addressSchema = z.object({
 
 export const createUserSchema = z.object({
   username: z.string().min(3),
-  password: z.string().min(7),
+  password: z.string().min(5),
   firstname: z.string().optional(),
   lastname: z.string().optional(),
   email: z.string().email().optional(),
